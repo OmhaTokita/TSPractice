@@ -46,3 +46,27 @@ if (student1.access === 1){
    
 
 }
+
+type globalVariable = number | string;
+
+
+function addCombine (num1: globalVariable , num2: globalVariable){
+    let result ;
+
+    if (typeof num1=== "number" && typeof num2 === "number"){
+        result = num1 + num2;
+    } else {
+        result = num1.toString () + num2.toString ();
+
+    }
+
+    return result;
+}
+
+
+
+const combineNumbe1r = addCombine (3,4);
+console.log( combineNumbe1r);
+
+const combineString = addCombine ("Lars", " pogi")
+console.log(combineString );

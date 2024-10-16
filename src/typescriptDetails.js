@@ -28,3 +28,17 @@ var student1 = {
 if (student1.access === 1) {
     console.log("Match");
 }
+function addCombine(num1, num2) {
+    var result;
+    if (typeof num1 === "number" && typeof num2 === "number") {
+        result = num1 + num2;
+    }
+    else {
+        result = num1.toString() + num2.toString();
+    }
+    return result;
+}
+var combineNumbe1r = addCombine(3, 4);
+console.log(combineNumbe1r);
+var combineString = addCombine("Lars", " pogi");
+console.log(combineString);
