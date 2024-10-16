@@ -64,9 +64,32 @@ function addCombine (num1: globalVariable , num2: globalVariable){
 }
 
 
-
 const combineNumbe1r = addCombine (3,4);
 console.log( combineNumbe1r);
 
 const combineString = addCombine ("Lars", " pogi")
 console.log(combineString );
+
+
+//create new branch git checkout -b function 
+
+function sum (numba1: number , numba2: number ):number {
+    return numba1 + numba2 ;
+
+}
+
+//pag nag coconsole log ka at wala kang ni rereturn automatic nag rereturn ka ng void or no return
+
+function getResult(num : number) {
+
+    let result = `Resul: ${num}`
+    return result ; 
+    //
+}
+
+let AddorGetResult: (num1: number , num2: number) => number ;
+let GetResult : (num: number ) => string
+
+
+AddorGetResult = sum;
+GetResult = getResult
